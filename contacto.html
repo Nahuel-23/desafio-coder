@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactanos midori box tienda bazzar</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  </head>
+  <body>
+    <header>
+      <nav>
+          <input type="checkbox" id="ckbox">
+          <label for="ckbox" class="drawer">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+          </label>
+          <h1>MidoriBox</h1>
+        
+          <ul class="menu-box">
+            <li><a href="./index.html" class="fa fa-home"> Inicio</a></li>
+            <li><a href="./registro.html" class="fa fa-user"> Registrate</a></li>
+            <li><a href="./sesion.html" class="fa fa-id-card"> Inicia Sesion</a></li>
+            <li><a href="./contacto.html" class="fa fa-envelope-open"> Contactanos</a></li>
+            <li><a href="./comprar.html" class="fa fa-cart-plus"> Tienda</a></li>
+          </ul>
+      </nav>
+  </header>
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="imagen fondo" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Mantengamonos en contacto</h3>
+          <p class="text">
+            Hola, en esta seccion podras contactarte con alguno de nuestros representantes!
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="img/location.png" class="icon" alt="icono localidad" />
+              <p>direcccion falsa 123</p>
+            </div>
+            <div class="information">
+              <img src="img/email.png" class="icon" alt="icono email" />
+              <p>midoribo2021@gmail.com</p>
+            </div>
+            <div class="information">
+              <img src="img/phone.png" class="icon" alt="icono informacion" />
+              <p>+54 9 1155170890</p>
+            </div>
+          </div>
+
+          <div class="social-media"> <!--Logos y links en imagenes de las redes sociales-->
+            <p class="title">Nuestras Redes:</p>
+            <div class="social-icons">
+              <a href="#">
+                <img src="./img/facebook.png" alt="facebook" width="35px">
+              </a>
+              <a href="#">
+                <img src="./img/instagram.png" alt="instagram" width="35px">
+              </a>
+              <a href="#">
+                <img src="./img/whatsapp.png" alt="whatsapp" width="35px">
+              </a>
+              <a href="#">
+                <img src="./img/linkedin.png" alt="linkedin" width="35px">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span> <!--circulo 1 "imagen de fondo"-->
+          <span class="circle two"></span> <!--circulo 2 "imagen de fondo"-->
+
+          <form action="index.html" autocomplete="off"> <!--formulario sin autocompletar texto-->
+            <h3 class="title">Conactanos</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" placeholder="Nombres y Apellido"/>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" placeholder="Correo Elecronico" />
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" placeholder="Telefono"/>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input" placeholder="Mensaje"></textarea>
+            </div>            
+            <input type="submit" value="Enviar" class="btn" />
+            <input type="reset" value="Resetear" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="footer-col">
+                  <h4>Empresa</h4>
+                  <ul>
+                      <li><a href="#">Nosotros</a></li>
+                      <li><a href="#">Nuestros Servicios</a></li>
+                      <li><a href="#">Politicas De Privacidad</a></li>
+                      <li><a href="#">Programa de Afiliciacion</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>Consigue ayuda</h4>
+                  <ul>
+                      <li><a href="#">Preguntas Frecuentes</a></li>
+                      <li><a href="#">Envios</a></li>
+                      <li><a href="#">Devoluciones</a></li>
+                      <li><a href="#">Estado del pedido</a></li>
+                      <li><a href="#">Opciones de pago</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>Marcas Trabajadas</h4>
+                  <ul>
+                      <li><a href="#">Hudson</a></li>
+                      <li><a href="#">Tramontina</a></li>
+                      <li><a href="#">Essen</a></li>
+                      <li><a href="#">k&k</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>Siganos en nuestras redes</h4>
+                  <div class="social-links">
+                      <a href="https://www.facebook.com/Midori_box_oficial-100963142352829/?ref=pages_you_manage" target="blank"><img class="fab fa-facebok" src="./img/facebook.png" alt="facebook" width="40px">
+                      <a href="#"><img class="fab fa-whatsapp" src="./img/whatsapp.png" alt="whatsapp" width="40px">
+                      <a href="#"><img class="fab fa-instagram" src="./img/instagram.png" alt="instagram" width="40px">
+                      <a href="#"><img class="fab fa-linkedin" src="./img/linkedin.png" alt="linkedin" width="40px">
+                  </div>
+              </div>
+          </div>
+      </div>
+ </footer>
+  </body>
+</html>
