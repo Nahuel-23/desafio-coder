@@ -30,18 +30,21 @@ header {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+  z-index: 1;
 }
 
 nav {
   text-align: right;
   padding: 30px 50px 0 0;
+  z-index: 1;
 }
 
 nav>a {
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-weight: 300;
   text-decoration: none;
   margin-right: 10px;
+  z-index: 1;
 }
 
 
@@ -53,17 +56,20 @@ header .textos-header {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  z-index: 1;
 }
 
 .textos-header h1 {
   font-size: 50px;
   color: #fff;
+  z-index: 1;
 }
 
 .textos-header h2 {
   font-size: 30px;
   font-weight: 300;
   color: #fff;
+  z-index: 1;
 }
 
 /* About us */
@@ -240,12 +246,6 @@ main .sobre-nosotros {
   font-family: 'Poppins', sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .container {
   max-width: 1170px;
   margin: auto;
@@ -261,8 +261,9 @@ ul {
 }
 
 .footer {
-  background-color: #24262b;
+  background-color: #1abc9c;
   padding: 70px 0;
+  border-radius: 30px 30px 0 0;
 }
 
 .footer-col {
@@ -272,7 +273,7 @@ ul {
 
 .footer-col h4 {
   font-size: 18px;
-  color: #24262b;
+  color: #000000;
   text-transform: capitalize;
   margin-bottom: 35px;
   font-weight: 500;
@@ -322,10 +323,6 @@ ul {
   transition: all 0.5s ease;
 }
 
-.footer-col .social-links a:hover {
-  color: #ffffff;
-  background-color: #ffffff;
-}
 
 /*responsive*/
 @media(max-width: 767px) {
@@ -476,7 +473,7 @@ nav {
 }
 
 nav>a {
-  color: #ffffff;
+  color: #ffffff86;
   font-weight: 300;
   text-decoration: none;
   margin-right: 10px;
@@ -828,7 +825,7 @@ textarea.input {
 }
 
 .nav-item{
-  color: white;
+  color: rgb(255, 255, 255) !important ;
   text-decoration: none;
   --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);    
 }
@@ -840,7 +837,7 @@ textarea.input {
 .nav-item::after{
   content: "";
   display: block;
-  background: rgb(255, 255, 255);
+  background: rgb(255, 255, 255)!important;
   width: 90%;
   margin-top: 3px;
   height: 3px;
@@ -879,9 +876,6 @@ textarea.input {
 
 /*seccion compras, estilos*/
 
-*{
-  box-sizing: border-box;
-}
 .section-compras{
   width: 100%;
   display: flex;
@@ -902,58 +896,71 @@ textarea.input {
   font-family: sans-serif;
   width: 30%;
 }
+
 .estilo .img-container{
   overflow: hidden;
-  height: 250px;
+  height: 150px;
   position: relative;
   border-radius: 15px;
 }
 .estilo .img-container img{
-  width: 105%;
+  width: 100%;
   position: absolute;
-  top: -60%;
   transition: all 0.5s;
 }
 .estilo:hover .img-container img{
   transform: scale(1.2);
 }
-.estilo .img-container .promo{
-  position: absolute;
-  top: 10px;
-  left: 0;
-  font-size: 20px;
-  background: #1abc9c;
-  padding: 15px;
-  color: black;
-  border-bottom-right-radius: 25px;
-  border-top-right-radius: 25px;
-}
+
 .estilo .info-container{
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
 }
+
 .estilo .info-container h3{
   margin: 0;
 }
+
 .estilo .info-container h3,
 .estilo .info-container strong,
 .estilo .info-container span{
   padding: 5px 15px;
   width: 100%;
 }
+
 .estilo .add-cart{
   margin-top: 2px;
   text-decoration: none;
   color: white;
-  background-color: black;
+  background-color: #1abc9c;
   padding: 15px;
-  border: 1px solid black;
+  border: 1px solid #1abc9c;
   border-radius: 25px;
 }
+
 .estilo .add-cart:hover{
-  color: black;
+  color: #1abc9c;
   background-color: transparent;
-  border: 1px solid black;
+  border: 1px solid #1abc9c;
+}
+
+.copy{
+  text-decoration: none;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  
+}
+
+
+
+
+/*prueba*/
+
+.altura{
+  height: 600px;
+  background: #ffffff;
 }
